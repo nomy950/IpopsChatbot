@@ -2,5 +2,6 @@
 # your script here
 
 ibmcloud login --apikey $1 -r kr-seo
-ibmcloud ks cluster config -c rias-ng-us-south-dal12-preprod
+clusterName=`ibmcloud ks clusters | grep $2 | grep $3 | awk '{ print $1 }'`
+ibmcloud ks cluster config -c $clusterName
 kubectl get pods -A

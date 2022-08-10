@@ -4,4 +4,5 @@
 ibmcloud login --apikey $1 -r kr-seo
 clusterName=`ibmcloud ks clusters | grep $2 | grep $3 | awk '{ print $1 }'`
 ibmcloud ks cluster config -c $clusterName
-kubectl get pods -A
+sh create-jumpod.sh
+#kubectl get pods -A

@@ -6,4 +6,6 @@ clusterName=`ibmcloud ks clusters | grep $2 | grep $3 | awk '{ print $1 }'`
 ibmcloud ks cluster config -c $clusterName
 #chmod +x create-jumpod.sh
 #./create-jumpod.sh -c kubectl get pods -A
+echo "<Command_Output>"
 kubectl get pods -A
+echo "</Command_Output>"

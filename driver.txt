@@ -1,6 +1,6 @@
     #! /bin/bash
     #set -u
-    issue_number=78
+    issue_number=32
     #sudo sh  ${d_api_key}
     #export JOB_LOG="$PIPELINE_LOG_URL"
     #echo ${JOB_LOG}

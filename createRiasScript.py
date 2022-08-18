@@ -12,7 +12,7 @@ from github import Github
 
 def main():
     
-    git_token = "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"
+    git_token = "<git-token>"
 
 
 

@@ -1,7 +1,7 @@
     #! /bin/bash
     #set -u
-    issue_number=90
-    sudo sh rias_scripts/dev_rias_90.sh ${d_api_key}
+    issue_number=91
+    sudo sh rias_scripts/dev_rias_91.sh ${d_api_key}
     export JOB_LOG="$PIPELINE_LOG_URL"
     echo ${JOB_LOG}
     
